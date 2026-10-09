@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>J. Roldán Fotografía · Fotógrafo en Roldán, Torre Pacheco</title>
+<meta name="description" content="Más de 30 años de fotografía social en Roldán: bodas, comuniones, recién nacidos, embarazadas, infantil y book joven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--ink:#171513;--mute:#6a635a;--beige:#efe4d3;--line:#ddd0bc;--gold:#a8834f;--night:#0d0c0b;--cream:#f3ebdd;
+--serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;--sans:"Jost","Helvetica Neue",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141211;--ink:#f3ebdd;--mute:#b5ab9b;--beige:#1d1a17;--line:#3a342d;--gold:#cfa56f}}
+:root[data-theme="dark"]{--bg:#141211;--ink:#f3ebdd;--mute:#b5ab9b;--beige:#1d1a17;--line:#3a342d;--gold:#cfa56f}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(106px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;margin:0}
+h1{font-size:clamp(3rem,8.4vw,6.6rem);letter-spacing:-.015em}
+h2{font-size:clamp(2.2rem,5.4vw,3.8rem);margin-bottom:.35em}
+h3{font-size:1.65rem}
+p{margin:0 0 1em;max-width:60ch}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+.lead{color:var(--mute);font-size:1.1rem}
+.gold{color:var(--gold)}
+.dark{background:var(--night);color:var(--cream);--mute:#b9ae9c;--gold:#cfa56f;--line:#34302a}
+header{position:fixed;top:0;left:0;right:0;z-index:40;padding-top:env(safe-area-inset-top,0px);background:rgba(13,12,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid #2a2620;color:#f3ebdd}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-family:var(--serif);font-style:italic;font-size:1.9rem;text-decoration:none;white-space:nowrap}
+.logo small{font-family:var(--sans);font-style:normal;font-size:.6rem;letter-spacing:.34em;margin-left:10px;opacity:.7}
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;font-size:.92rem;opacity:.82}
+nav a:hover{opacity:1;color:#cfa56f}
+.btn{display:inline-block;background:var(--gold);color:#16120d;padding:15px 30px;text-decoration:none;font-weight:500;letter-spacing:.02em;border:1px solid var(--gold)}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.ghost:hover{color:var(--gold)}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:160px 0 90px;position:relative;overflow:hidden;background:radial-gradient(1000px 600px at 85% 30%,#2a2118 0,#0d0c0b 70%)}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero p.k{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:#cfa56f;margin-bottom:18px}
+.hero h1 em{font-style:italic;color:#cfa56f}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.shop{position:relative}
+.shop::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:1px solid #cfa56f;z-index:0}
+.shop img{position:relative;z-index:1;width:100%;aspect-ratio:4/3.1;object-fit:cover;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.shop figcaption{position:absolute;z-index:2;left:-14px;bottom:26px;background:#f3ebdd;color:#16120d;padding:10px 18px;font-family:var(--serif);font-style:italic;font-size:1.15rem}
+.rise>*{opacity:0;transform:translateY(22px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.rise>*:nth-child(2){animation-delay:.12s}.rise>*:nth-child(3){animation-delay:.24s}.rise>*:nth-child(4){animation-delay:.36s}
+.shop{opacity:0;animation:up 1.1s .3s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.stats{border-top:1px solid #34302a;margin-top:70px;padding-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stats b{display:block;font-family:var(--serif);font-weight:500;font-size:2.6rem;color:#cfa56f;line-height:1}
+.stats span{font-size:.92rem;color:#b9ae9c}
+.svc{border-top:1px solid var(--line);margin-top:44px}
+.svc div{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.svc p{margin:0;color:var(--mute)}
+.gal{columns:3;column-gap:18px;margin-top:46px}
+.gal button{display:block;width:100%;padding:0;margin:0 0 18px;border:0;background:none;cursor:zoom-in;overflow:hidden;break-inside:avoid}
+.gal img{width:100%;height:auto;transition:transform .8s ease}
+.gal button:hover img{transform:scale(1.04)}
+dialog{border:0;padding:0;background:transparent;max-width:94vw;max-height:94vh;overflow:visible}
+dialog::backdrop{background:rgba(8,7,6,.92)}
+dialog img{max-width:94vw;max-height:90vh;margin:auto}
+dialog form{position:absolute;top:-44px;right:0}
+dialog form button{background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+.offer{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.card{border:1px solid #cfa56f;padding:44px;position:relative}
+.price{font-family:var(--serif);font-size:5.4rem;line-height:1;color:#cfa56f}
+.card ul{list-style:none;padding:0;margin:22px 0 28px}
+.card li{padding:10px 0;border-bottom:1px solid #34302a}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.5rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold)}
+details[open] summary::after{content:"−"}
+details p{margin:.8em 0 0;color:var(--mute)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+dl{margin:0}dt{font-family:var(--serif);font-size:1.3rem;color:#cfa56f;margin-top:20px}dd{margin:0;color:#c9bfae}
+footer{background:#080706;color:#8d8374;padding:28px 0;font-size:.9rem}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;background:#1f8f4e;color:#fff;border-radius:999px;padding:14px 24px;text-decoration:none;font-weight:500;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+@media (max-width:860px){
+section{padding:72px 0}
+.hero{padding-top:140px}
+.hero .grid,.offer,.about,.contact{grid-template-columns:1fr;gap:44px}
+.shop::before{inset:14px -10px -14px 10px}
+.svc div{grid-template-columns:1fr;gap:6px}
+.gal{columns:2;column-gap:12px}.gal button{margin-bottom:12px}
+nav,.logo small{display:none}
+.stats b{font-size:2rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rise>*,.shop{animation:none;opacity:1;transform:none}.gal img{transition:none}}
+
+.tick{overflow:hidden;white-space:nowrap;height:30px;line-height:30px;font-size:.78rem;letter-spacing:.16em;color:#cfa56f;border-bottom:1px solid #2a2620}
+.tick div{display:inline-block;animation:mq 60s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+#bar{position:fixed;top:0;left:0;width:100%;height:2px;background:#cfa56f;transform:scaleX(0);transform-origin:left;z-index:70}
+.edge{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:30;display:none;flex-direction:column;align-items:center;gap:14px;mix-blend-mode:difference;color:#fff;pointer-events:none}
+.edge span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--serif);font-style:italic;font-size:1.25rem;letter-spacing:.2em}
+.edge i{width:1px;height:80px;background:#fff;transform-origin:top;animation:grow 3.4s ease-in-out infinite alternate}
+@keyframes grow{from{transform:scaleY(.12)}to{transform:scaleY(1)}}
+@media (min-width:1360px){.edge{display:flex}}
+@media (prefers-reduced-motion:reduce){.tick div,.edge i{animation:none}}
+
+/* Portada inspirada en la referencia del cliente */
+:root{--gold:#c99a5d;--night:#09131c}
+header{position:absolute;top:0;left:0;right:0;z-index:30;background:rgba(5,13,21,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,154,93,.25)}
+header>.wrap,header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:94px}
+header nav{display:flex;align-items:center;gap:clamp(16px,3vw,42px)}
+header nav a{text-decoration:none;color:#f6efe5;font-family:var(--serif);font-size:1.15rem}
+header nav a:hover{color:var(--gold)}
+.logo{font-family:var(--serif);font-style:italic;font-size:2rem;line-height:.85;text-decoration:none;color:#d8b58d;white-space:nowrap}
+.logo small{display:block;font-family:var(--sans);font-size:.62rem;font-style:normal;letter-spacing:.42em;text-align:center;margin-top:8px}
+.hero{position:relative;isolation:isolate;min-height:100svh;display:flex;align-items:stretch;padding:0;overflow:hidden;background:#101b25}
+.hero-photo{position:absolute;inset:0;z-index:-3;background-image:url('assets/fachada-portada.png');background-size:cover;background-position:center center;transform:scale(1.005)}
+.hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,13,20,.88) 0%,rgba(5,13,20,.65) 25%,rgba(5,13,20,.15) 54%,rgba(5,13,20,0) 78%),linear-gradient(0deg,rgba(5,10,14,.76) 0%,transparent 24%,rgba(5,10,14,.06) 100%)}
+.hero-content{width:100%;max-width:none;padding:clamp(150px,18vh,210px) clamp(28px,6.1vw,100px) 0;display:grid;grid-template-columns:minmax(300px,430px) 1fr;grid-template-rows:1fr auto;gap:0;position:relative}
+.hero-copy{align-self:center;max-width:430px;padding-bottom:110px}
+.hero p.k{display:flex;align-items:center;gap:14px;font-family:var(--sans);font-style:normal;font-size:.82rem;letter-spacing:.2em;font-weight:500;color:#e3b878;margin-bottom:20px}
+.gold-rule{display:inline-block;width:54px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(3.4rem,5.4vw,5.8rem);line-height:.91;letter-spacing:-.035em;color:#fffaf4}
+.hero h1 em{display:inline-block;color:#d6a467;font-weight:500}
+.hero .lead{color:#f4eee5;font-family:var(--serif);font-size:clamp(1.1rem,1.5vw,1.35rem);line-height:1.35;margin-top:26px;max-width:360px}
+.hero .cta{margin-top:34px}
+.hero .btn{background:#d5a467;border:1px solid #d5a467;color:#17120d;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem;padding:15px 24px;display:inline-flex;gap:18px;align-items:center}
+.hero .btn:hover{background:#f0c58e;border-color:#f0c58e;color:#17120d}
+.hero-bottom{grid-column:1/-1;display:flex;align-items:center;gap:clamp(24px,5vw,76px);margin:0 calc(clamp(28px,6.1vw,100px)*-1);padding:18px clamp(28px,6.1vw,100px) 22px;background:linear-gradient(90deg,rgba(7,10,12,.88),rgba(7,10,12,.52),rgba(7,10,12,.05));border-top:1px solid rgba(255,255,255,.15)}
+.hero-bottom>div{display:flex;align-items:center;gap:14px;color:#f7eee2}
+.hero-bottom p{margin:0;display:flex;flex-direction:column;line-height:1.3;font-family:var(--serif);font-size:1.05rem}
+.hero-bottom strong{font-weight:500}.hero-bottom small{font-size:.83rem;color:#e6d9c8}
+.value-icon{font-family:var(--serif);font-size:2.5rem;line-height:1;color:var(--gold)}
+.hero .stats,.hero .shop{display:none}
+@media(max-width:860px){
+ header .wrap{min-height:78px}.logo{font-size:1.65rem}header nav{display:none}
+ .hero{min-height:100svh}
+ .hero-photo{background-position:58% center}
+ .hero-shade{background:linear-gradient(90deg,rgba(5,13,20,.82),rgba(5,13,20,.48) 62%,rgba(5,13,20,.14)),linear-gradient(0deg,rgba(5,10,14,.86),transparent 40%)}
+ .hero-content{padding:135px 26px 0;grid-template-columns:1fr;grid-template-rows:1fr auto}
+ .hero-copy{align-self:center;padding:30px 0 90px;max-width:390px}
+ .hero h1{font-size:clamp(3.1rem,12vw,5rem)}
+ .hero .lead{max-width:330px;font-size:1.13rem}
+ .hero-bottom{margin:0 -26px;padding:16px 24px 20px;gap:18px;justify-content:space-between}
+ .hero-bottom>div{gap:8px}.value-icon{font-size:1.9rem}.hero-bottom p{font-size:.9rem}.hero-bottom small{font-size:.72rem}
+}
+@media(max-width:430px){.hero-bottom{gap:10px}.hero-bottom>div{gap:5px}.hero-bottom p{font-size:.8rem}.hero-bottom small{font-size:.66rem}.value-icon{font-size:1.55rem}}
+
+</style>
+</head>
+<body>
+<header>
+<div class="tick" aria-hidden="true"><div><span>J. Roldán Fotografía &nbsp;✦&nbsp; Fotógrafo en Roldán &nbsp;✦&nbsp; Más de 30 años de experiencia &nbsp;✦&nbsp; Bodas, comuniones, recién nacidos y book joven &nbsp;✦&nbsp; </span><span>J. Roldán Fotografía &nbsp;✦&nbsp; Fotógrafo en Roldán &nbsp;✦&nbsp; Más de 30 años de experiencia &nbsp;✦&nbsp; Bodas, comuniones, recién nacidos y book joven &nbsp;✦&nbsp; </span><span>J. Roldán Fotografía &nbsp;✦&nbsp; Fotógrafo en Roldán &nbsp;✦&nbsp; Más de 30 años de experiencia &nbsp;✦&nbsp; Bodas, comuniones, recién nacidos y book joven &nbsp;✦&nbsp; </span><span>J. Roldán Fotografía &nbsp;✦&nbsp; Fotógrafo en Roldán &nbsp;✦&nbsp; Más de 30 años de experiencia &nbsp;✦&nbsp; Bodas, comuniones, recién nacidos y book joven &nbsp;✦&nbsp; </span></div></div>
+<div class="wrap">
+<a class="logo" href="#inicio">J. Roldán<small>FOTOGRAFÍA</small></a>
+<nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#oferta">Oferta</a><a href="#sobre">Estudio</a><a href="#dudas">Dudas</a><a href="#contacto">Contacto</a></nav>
+<a class="btn" href="https://wa.me/34696252286" style="padding:10px 20px">Pedir cita</a>
+</div>
+</header>
+
+<main>
+<section class="hero dark" id="inicio">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <div class="rise hero-copy">
+      <p class="k">FOTÓGRAFO EN ROLDÁN <span class="gold-rule"></span></p>
+      <h1>Capturamos<br>tus mejores<br><em>momentos</em></h1>
+      <p class="lead">Más de 30 años de experiencia en fotografía social. Bodas, comuniones, recién nacidos, embarazadas, infantil y book joven.</p>
+      <div class="cta"><a class="btn" href="#servicios">Ver servicios <span aria-hidden="true">→</span></a></div>
+    </div>
+    <div class="hero-spacer" aria-hidden="true"></div>
+    <div class="hero-bottom" aria-label="Nuestros valores">
+      <div><span class="value-icon" aria-hidden="true">◎</span><p><strong>Experiencia</strong><small>Más de 30 años</small></p></div>
+      <div><span class="value-icon" aria-hidden="true">☆</span><p><strong>Calidad</strong><small>En cada detalle</small></p></div>
+      <div><span class="value-icon" aria-hidden="true">♡</span><p><strong>Compromiso</strong><small>Con tus recuerdos</small></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+<div class="wrap">
+<h2>Una sesión para cada etapa de la vida</h2>
+<p class="lead">Preparamos cada encargo contigo antes de coger la cámara, para que el resultado se parezca a lo que imaginas.</p>
+<div class="svc">
+<div><h3>Bodas</h3><p>El día completo, cada emoción y cada detalle, contado como una historia que podrás revivir.</p></div>
+<div><h3>Comuniones</h3><p>La alegría y la solemnidad de este paso, con todos los detalles registrados.</p></div>
+<div><h3>Recién nacidos</h3><p>Sesiones personalizadas que guardan la ternura de los primeros días.</p></div>
+<div><h3>Embarazadas</h3><p>La espera y la conexión entre madre y bebé, en sesiones creativas.</p></div>
+<div><h3>Fotografía infantil</h3><p>Desde las primeras sonrisas hasta los momentos de juego.</p></div>
+<div><h3>Book joven</h3><p>Books personalizados que reflejan la personalidad y el estilo de cada uno.</p></div>
+</div>
+</div>
+</section>
+
+<section id="galeria" style="background:var(--beige)">
+<div class="wrap">
+<h2>Portfolio</h2>
+<p class="lead">Una selección de trabajos del estudio. Toca una foto para verla en grande.</p>
+<div class="gal">
+<button type="button"><img src="assets/foto-galeria-01.jpg" alt="Novios saliendo de la iglesia" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-02.jpg" alt="Retrato en blanco y negro" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-03.jpg" alt="Novios bajo la lluvia de arroz, en blanco y negro" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-04.jpg" alt="Pareja de novios en la playa" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-05.jpg" alt="Retrato de estudio de un joven con traje" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-06.jpg" alt="Retrato de estudio con luz dramática" loading="lazy"></button>
+<button type="button"><img src="assets/foto-galeria-07.jpg" alt="Retrato masculino en blanco y negro" loading="lazy"></button>
+</div>
+</div>
+</section>
+
+<section class="dark" id="oferta">
+<div class="wrap offer">
+<div><h2>Oferta de Navidad</h2><p class="lead">Un regalo que se queda en casa: una sesión en estudio con fotos impresas, calendarios e imanes para toda la familia.</p></div>
+<div class="card">
+<div class="price">75 €</div>
+<ul><li>Sesión de fotos en estudio</li><li>3 fotos de 15x20 y 2 fotos de 20x25</li><li>5 calendarios de 24x18</li><li>5 imanes de nevera</li><li>1 ampliación de 30x40</li><li>Entrega de archivos digitales</li></ul>
+<a class="btn" href="https://wa.me/34696252286?text=Hola%2C%20quiero%20la%20oferta%20de%20Navidad%20de%2075%20%E2%82%AC">Reservar mi sesión</a>
+</div>
+</div>
+</section>
+
+<section id="sobre">
+<div class="wrap about">
+<img src="assets/foto-original-09.jpg" alt="Retrato de estudio realizado por J. Roldán" loading="lazy">
+<div>
+<h2>Más de 30 años mirando <span class="gold">lo que importa</span></h2>
+<p>J. Roldán Fotografía se ha consolidado como un referente de la fotografía social en Roldán y Torre Pacheco.</p>
+<p>Nos apasiona contar historias a través de las imágenes. Por eso cuidamos un ambiente cómodo y relajado en cada sesión: cuando te sientes bien, las fotos lo notan.</p>
+<a class="btn" href="https://wa.me/34696252286">Hablar con el estudio</a>
+</div>
+</div>
+</section>
+
+<section id="dudas" style="background:var(--beige)">
+<div class="wrap">
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Cómo pido cita?</summary><p>Escríbenos por WhatsApp o llama al 696 252 286 y buscamos el día que mejor te venga.</p></details>
+<details><summary>¿Cuál es el horario del estudio?</summary><p>De lunes a viernes, de 16:00 a 20:00.</p></details>
+<details><summary>¿Dónde está el estudio?</summary><p>En la calle Maestra Dolores Fernández, 1, en Roldán (Torre Pacheco).</p></details>
+<details><summary>¿Se puede pagar con tarjeta?</summary><p>Sí, aceptamos tarjeta de crédito.</p></details>
+<details><summary>¿Qué sesiones hacéis?</summary><p>Bodas, comuniones, recién nacidos, embarazadas, fotografía infantil y book joven.</p></details>
+</div>
+</section>
+
+<section class="dark" id="contacto">
+<div class="wrap contact">
+<div><h2>Hablemos de tu sesión</h2><p class="lead">El WhatsApp es la forma más rápida de contactar: cita, consulta o propuesta.</p><a class="btn" href="https://wa.me/34696252286">Escribir por WhatsApp</a></div>
+<dl>
+<dt>Teléfono y WhatsApp</dt><dd><a href="tel:+34696252286">696 252 286</a></dd>
+<dt>Correo</dt><dd><a href="mailto:jroldanfotografia@gmail.com">jroldanfotografia@gmail.com</a></dd>
+<dt>Estudio</dt><dd>Calle Maestra Dolores Fernández, 1<br>Roldán, Torre Pacheco (Murcia)<br><a href="https://www.google.com/maps/search/?api=1&query=Calle+Maestra+Dolores+Fern%C3%A1ndez+1+Rold%C3%A1n">Ver en el mapa</a></dd>
+<dt>Horario</dt><dd>Lunes a viernes, de 16:00 a 20:00</dd>
+<dt>Redes</dt><dd><a href="https://www.instagram.com/jroldanfoto/">Instagram</a> · <a href="https://www.tiktok.com/@j.roldanfotografia">TikTok</a> · Facebook</dd>
+</dl>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© J. Roldán Fotografía · Roldán, Torre Pacheco</div></footer>
+<a class="wa" href="https://wa.me/34696252286" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+<div id="bar"></div>
+<div class="edge" aria-hidden="true"><i></i><span>J. Roldán Fotografía</span></div>
+<dialog id="lb"><form method="dialog"><button aria-label="Cerrar">×</button></form><img alt=""></dialog>
+<script>
+(function(){var d=document.getElementById('lb'),i=d.querySelector('img');
+document.querySelectorAll('.gal button').forEach(function(b){b.addEventListener('click',function(){var m=b.querySelector('img');i.src=m.src;i.alt=m.alt;d.showModal()})});
+d.addEventListener('click',function(e){if(e.target===d)d.close()});
+var bar=document.getElementById('bar');function p(){var m=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(m>0?scrollY/m:0)+')'}addEventListener('scroll',p,{passive:true});p();})();
+</script>
+</body>
+</html>
 
