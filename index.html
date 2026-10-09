@@ -120,9 +120,9 @@ header nav a:hover{color:var(--gold)}
 .logo{font-family:var(--serif);font-style:italic;font-size:2rem;line-height:.85;text-decoration:none;color:#d8b58d;white-space:nowrap}
 .logo small{display:block;font-family:var(--sans);font-size:.62rem;font-style:normal;letter-spacing:.42em;text-align:center;margin-top:8px}
 .hero{position:relative;isolation:isolate;min-height:100svh;display:flex;align-items:stretch;padding:0;overflow:hidden;background:#101b25}
-.hero-photo{position:absolute;inset:0;z-index:-3;background-image:url('assets/fachada-portada.png');background-size:cover;background-position:center center;transform:scale(1.005)}
-.hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,13,20,.88) 0%,rgba(5,13,20,.65) 25%,rgba(5,13,20,.15) 54%,rgba(5,13,20,0) 78%),linear-gradient(0deg,rgba(5,10,14,.76) 0%,transparent 24%,rgba(5,10,14,.06) 100%)}
-.hero-content{width:100%;max-width:none;padding:clamp(150px,18vh,210px) clamp(28px,6.1vw,100px) 0;display:grid;grid-template-columns:minmax(300px,430px) 1fr;grid-template-rows:1fr auto;gap:0;position:relative}
+.hero-photo{position:absolute;inset:0;z-index:0;background-image:url('assets/fachada-portada.png');background-size:cover;background-position:center center;transform:scale(1.005)}
+.hero-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,13,20,.88) 0%,rgba(5,13,20,.65) 25%,rgba(5,13,20,.15) 54%,rgba(5,13,20,0) 78%),linear-gradient(0deg,rgba(5,10,14,.76) 0%,transparent 24%,rgba(5,10,14,.06) 100%)}
+.hero-content{position:relative;z-index:2;width:100%;max-width:none;padding:clamp(150px,18vh,210px) clamp(28px,6.1vw,100px) 0;display:grid;grid-template-columns:minmax(300px,430px) 1fr;grid-template-rows:1fr auto;gap:0;position:relative}
 .hero-copy{align-self:center;max-width:430px;padding-bottom:110px}
 .hero p.k{display:flex;align-items:center;gap:14px;font-family:var(--sans);font-style:normal;font-size:.82rem;letter-spacing:.2em;font-weight:500;color:#e3b878;margin-bottom:20px}
 .gold-rule{display:inline-block;width:54px;height:1px;background:var(--gold)}
@@ -276,4 +276,3 @@ var bar=document.getElementById('bar');function p(){var m=document.documentEleme
 </script>
 </body>
 </html>
-
